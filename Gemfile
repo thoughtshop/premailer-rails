@@ -4,6 +4,8 @@ gemspec
 
 action_mailer_version = ENV.fetch('ACTION_MAILER_VERSION', '4.0')
 
+gem 'premailer', :github => "premailer/premailer"
+
 if action_mailer_version == 'head'
   git 'git://github.com/rails/rails.git' do
     gem 'actionmailer'
